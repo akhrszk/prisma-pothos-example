@@ -1,0 +1,52 @@
+{
+  "name": "prisma-pothos-graphql",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "prisma": {
+    "seed": "ts-node prisma/seed.ts"
+  },
+  "scripts": {
+    "dev": "ts-node src/main.ts",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "format": "npm-run-all eslint:fix prettier prisma:format",
+    "eslint:fix": "eslint --fix \"./src/**/*.{ts,tsx}\"",
+    "prettier": "prettier --write \"./src/**/*.{ts,tsx,json,md}\"",
+    "prisma:format": "prisma format"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@faker-js/faker": "^8.2.0",
+    "@types/bcrypt": "^5.0.1",
+    "@types/jsonwebtoken": "^9.0.4",
+    "@types/node": "^20.8.9",
+    "@typescript-eslint/eslint-plugin": "^6.4.0",
+    "eslint": "^8.0.1",
+    "eslint-config-prettier": "^9.0.0",
+    "eslint-config-standard-with-typescript": "^39.1.1",
+    "eslint-plugin-import": "^2.25.2",
+    "eslint-plugin-n": "^15.0.0 || ^16.0.0 ",
+    "eslint-plugin-promise": "^6.0.0",
+    "npm-run-all": "^4.1.5",
+    "prettier": "^3.0.3",
+    "prisma": "^5.5.2",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.2.2"
+  },
+  "dependencies": {
+    "@pothos/core": "^3.38.0",
+    "@pothos/plugin-prisma": "^3.61.0",
+    "@pothos/plugin-relay": "^3.44.0",
+    "@pothos/plugin-scope-auth": "^3.20.0",
+    "@pothos/plugin-simple-objects": "^3.7.0",
+    "@prisma/client": "5.5.2",
+    "@whatwg-node/server-plugin-cookies": "^1.0.2",
+    "bcrypt": "^5.1.1",
+    "graphql": "^16.8.1",
+    "graphql-scalars": "^1.22.4",
+    "graphql-yoga": "^5.0.0",
+    "jsonwebtoken": "^9.0.2"
+  }
+}
